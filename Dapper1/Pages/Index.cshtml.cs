@@ -25,5 +25,6 @@ namespace Dapper1.Pages
             products =await _win.GetAll();
             return Page();
         }
+
     }
 }

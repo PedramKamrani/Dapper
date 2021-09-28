@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Dapper1.Services;
+using Dapper1.Comman;
 
 namespace Dapper1
 {
@@ -25,6 +26,7 @@ namespace Dapper1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<Iwin, Win>();
+            services.AddSingleton<Uitilty>();
             services.AddRazorPages();
         }
 

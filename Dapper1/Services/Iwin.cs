@@ -9,5 +9,6 @@ namespace Dapper1.Services
    public interface Iwin
    {
        Task<List<WinViewModel>> GetAll();
+        Task Add(CreateViewModel model);
    }
 }
